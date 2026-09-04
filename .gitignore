@@ -5,3 +5,6 @@ Thumbs.db
 
 # local screenshots from the design pass
 .shots/
+
+# netlify link state
+.netlify/
