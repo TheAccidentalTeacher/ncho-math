@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>The Board &middot; NCHO Math Lane</title>
+<meta name="description" content="Every 6th and 7th grade Common Core math standard and whether a worked, gated problem exists for it.">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=JetBrains+Mono:wght@400;700&display=swap">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="home" href="../index.html">NCHO Math Lane</a>
+    <nav class="site-nav">
+      <a href="index.html" aria-current="page">The Board</a>
+      <a href="../machine/index.html">The Machine</a>
+      <a href="../samples/index.html">Samples</a>
+      <a href="../findings/index.html">What We Learned</a>
+      <a href="../roadmap/index.html">What's Next</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <p class="crumb"><a href="../index.html">Home</a> / The Board</p>
+  <span class="lbl">The proof of concept</span>
+  <h1>53 standards</h1>
+  <p class="lede">Every Common Core math standard for <strong>sixth and seventh grade</strong>, and
+  whether we have a worked problem for it that passed every gate. When this board is green, the
+  machine is proven &mdash; and higher grades are the same machine with harder inputs.</p>
+
+  <div class="stats" id="board-stats"></div>
+
+  <div style="max-width:var(--measure)">
+    <div class="meter" aria-hidden="true"><span id="board-meter" style="width:0%"></span></div>
+    <p class="mono" id="board-progress" style="margin-top:11px;font-size:13px;color:var(--pencil)"></p>
+  </div>
+
+  <div class="board-controls" id="board-controls" role="group" aria-label="Filter standards">
+    <button class="btn" type="button" data-filter="all" aria-pressed="true">All 53</button>
+    <button class="btn" type="button" data-filter="g6" aria-pressed="false">Grade 6</button>
+    <button class="btn" type="button" data-filter="g7" aria-pressed="false">Grade 7</button>
+    <button class="btn" type="button" data-filter="todo" aria-pressed="false">Not started</button>
+    <button class="btn" type="button" data-filter="done" aria-pressed="false">Done</button>
+  </div>
+
+  <div class="board" id="board"></div>
+
+  <section>
+    <span class="lbl">How to read this</span>
+    <h2>What &ldquo;done&rdquo; means here</h2>
+    <p>A standard is only marked done when there is a problem that:</p>
+    <ul class="plain">
+      <li>teaches on the page before it asks anything &mdash; the answer is findable in what the
+        child just read, not in a memory of last year;</li>
+      <li>has a figure, where it needs one, that was <strong>drawn from the same numbers as the
+        answer</strong> and then measured back to prove it matches;</li>
+      <li>has an answer the machine <strong>computed</strong>, cross-checked a second independent
+        way, with the units and the domain right;</li>
+      <li>passed every gate &mdash; nothing overflowing the page, no labels printed on top of each
+        other, no text cropped off a figure, every font real;</li>
+      <li>carries the standard code <strong>honestly</strong> &mdash; the child does what the
+        standard actually describes, at the grade it is written for, or the code is absent and the
+        reason is written down.</li>
+    </ul>
+  </section>
+
+  <section>
+    <span class="lbl">Where these codes come from</span>
+    <h2>Nobody typed these</h2>
+    <p>All 53 come out of a frozen table of the <strong>664 official Common Core math codes</strong>,
+    pulled from the machine-readable release and checked into the repo with a date stamp. A code
+    that isn&rsquo;t in that table cannot appear on this board or on a product.</p>
+    <p>That matters more than it sounds like it should. The official website&rsquo;s per-standard
+    pages now return &ldquo;not found,&rdquo; the official PDF doesn&rsquo;t contain the codes at
+    all, and the site that <em>looks</em> official <strong>answers 200 OK for made-up codes</strong>
+    &mdash; so anything that checks a code by loading its web page would wave through every typo it
+    was ever handed.</p>
+    <div class="callout">
+      <span class="lbl">The trap worth knowing</span>
+      <p>There are two official machine-readable releases of these codes and <strong>they disagree
+      on 124 of the 664.</strong> The wrong one is the file published by the standards body itself.
+      Build off it and every fine-grained code &mdash; exactly the kind a math worksheet cites most
+      &mdash; comes out malformed, and nothing tells you.</p>
+      <p>We&rsquo;re on the correct one, and the generator asserts it every time it runs.</p>
+    </div>
+  </section>
+</main>
+
+<script src="../data/standards.js"></script>
+<script src="../assets/board.js"></script>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div>NCHO MATH LANE &middot; The Board</div>
+    <div>Generated by <code>tools/build-standards.mjs</code> from the frozen CCSS-M table.</div>
+    <div>&copy; Copyright 2010. National Governors Association Center for Best Practices and Council of Chief State School Officers. All rights reserved.</div>
+  </div>
+</footer>
+</body>
+</html>

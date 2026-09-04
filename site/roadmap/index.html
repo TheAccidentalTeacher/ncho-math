@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>What's Next &middot; NCHO Math Lane</title>
+<meta name="description" content="Five steps to make the math machine work perfectly, plus the half of the research that reopens when we build apps.">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=JetBrains+Mono:wght@400;700&display=swap">
+<link rel="stylesheet" href="../assets/site.css">
+<style>
+  .reopen { border: var(--line); background:#fff; }
+  .reopen > div { display:grid; grid-template-columns: 124px minmax(0,1fr); gap:22px;
+                  padding: 20px 22px; border-bottom: var(--line); align-items:start; }
+  .reopen > div:last-child { border-bottom:0; }
+  .reopen .state { font-family:"JetBrains Mono",monospace; font-size:10.5px; font-weight:700;
+                   letter-spacing:.07em; padding:5px 8px; text-align:center; line-height:1.4;
+                   border:1px solid currentColor; border-radius:2px; }
+  .reopen .free { color:var(--green); background:var(--green-wash); }
+  .reopen .paid { color:var(--amber); background:var(--amber-wash); }
+  .reopen .shut { color:var(--pencil); background:var(--paper-2); }
+  .reopen p { font-size:16.5px; margin-bottom:0; max-width:62ch; }
+  .reopen p + p { margin-top:8px; }
+  @media (max-width:620px){ .reopen > div { grid-template-columns:1fr; gap:12px; }
+                            .reopen .state { justify-self:start; } }
+</style>
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="home" href="../index.html">NCHO Math Lane</a>
+    <nav class="site-nav">
+      <a href="../standards/index.html">The Board</a>
+      <a href="../machine/index.html">The Machine</a>
+      <a href="../samples/index.html">Samples</a>
+      <a href="../findings/index.html">What We Learned</a>
+      <a href="index.html" aria-current="page">What's Next</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <p class="crumb"><a href="../index.html">Home</a> / What's Next</p>
+  <span class="lbl">The plan</span>
+  <h1>Five steps, in order</h1>
+  <p class="lede">Each one unblocks the next. <strong>Step one is the only thing standing between
+  here and a math book a week</strong> &mdash; and it&rsquo;s also the engine an app would run on,
+  so it gets built once and pays twice.</p>
+
+  <ol class="steps">
+    <li>
+      <span class="step"></span>
+      <div>
+        <h3>Teach it to invent its own problems</h3>
+        <p>Right now every problem is hand-written and then verified. Fine for a sample. Useless
+        for 53 standards, let alone a book a week.</p>
+        <p>What&rsquo;s needed is a <em>template</em>: &ldquo;a proportion with a whole-number
+        answer&rdquo; that produces a hundred versions, all with numbers that come out clean, none
+        of them accidentally broken — no dividing by zero, no negative lengths, no ugly decimals
+        where whole numbers were intended.</p>
+        <p>The trick the established systems use is <strong>backwards</strong>: pick the answer
+        first, then build a problem around it. Never generate randomly and hope something good
+        falls out.</p>
+        <span class="effort">The real blocker · roughly a day · unblocks everything below</span>
+      </div>
+    </li>
+    <li>
+      <span class="step"></span>
+      <div>
+        <h3>Plug math into the actual book machine</h3>
+        <p>Everything built so far is standalone — it makes a beautiful sample that isn&rsquo;t
+        connected to the engine that makes the books already selling.</p>
+        <p>Connecting them means adding math question types alongside the eight word types, and
+        two fields to the lesson format: one for the math, one for the figure.</p>
+        <span class="effort">Half a day, once step 1 exists</span>
+      </div>
+    </li>
+    <li>
+      <span class="step"></span>
+      <div>
+        <h3>Wire the standards in</h3>
+        <p>The 664-code table exists and the checker works. What&rsquo;s missing is running it
+        against each lesson as it&rsquo;s written, under the same three-tier honesty rule the
+        science books already use: <em>aligned</em>, <em>supporting</em>, or no code at all with a
+        written reason.</p>
+        <p>On TPT: tag Common Core and let their crosswalk translate to state standards for buyers
+        automatically. They explicitly can&rsquo;t crosswalk Texas or Virginia, so those get tagged
+        by hand or not at all.</p>
+        <span class="effort">A couple of hours</span>
+      </div>
+    </li>
+    <li>
+      <span class="step"></span>
+      <div>
+        <h3>Build the correction channel</h3>
+        <p>Since nobody ships clean, the thing that makes shipping <em>safe</em> is a way to fix a
+        mistake in public.</p>
+        <p>Copy OpenStax&rsquo;s model — the only process in all this research with real outcome
+        data behind it. Typos route straight through with no review. Anything needing judgment goes
+        to a human. <strong>The whole log is public.</strong> That turns an inevitable defect into
+        visible diligence instead of a one-star review.</p>
+        <span class="effort">A day · do it before volume, not after</span>
+      </div>
+    </li>
+    <li>
+      <span class="step"></span>
+      <div>
+        <h3>Make it fast</h3>
+        <p>Every figure currently starts a fresh program from cold — about half a second of pure
+        startup doing nothing. Keeping one running instead measures roughly nine times faster.</p>
+        <p>For a 200-figure book that&rsquo;s twelve seconds instead of a hundred. Irrelevant at
+        one book. Very relevant at five a week.</p>
+        <span class="effort">Two hours · do it when volume makes it hurt</span>
+      </div>
+    </li>
+  </ol>
+
+  <section id="apps">
+    <span class="lbl">Scott&rsquo;s call, 4 September</span>
+    <h2>Half of what we closed reopens when we build apps</h2>
+    <p>Everything in the research was decided for <strong>paper</strong> — a book Amazon prints, a
+    PDF a teacher downloads. Several tools got ruled out on that basis and nothing else.</p>
+    <p>That&rsquo;s a snapshot, not a law. <em>&ldquo;Wrong for paper&rdquo;</em> and
+    <em>&ldquo;wrong for us&rdquo;</em> are different verdicts, and only one is permanent.</p>
+
+    <div class="reopen" style="margin-top:24px">
+      <div>
+        <div class="state free">FREE<br>MIT LICENCE</div>
+        <div>
+          <h3>JSXGraph &mdash; interactive geometry</h3>
+          <p>Skipped because print doesn&rsquo;t need it. But it isn&rsquo;t a figure library —
+          <strong>it&rsquo;s a manipulative.</strong> Drag a vertex, watch the angle update. Real
+          objects for angles, arcs, bisectors, tangents, circumcircles and congruence marks, with
+          exact measurements available at any moment.</p>
+          <p>University-built, shipping releases in July <em>and</em> August, and licensed so
+          commercial use costs nothing.</p>
+        </div>
+      </div>
+      <div>
+        <div class="state free">FREE<br>MIT LICENCE</div>
+        <div>
+          <h3>Khan Academy&rsquo;s exercise engine</h3>
+          <p>Khan open-sources the actual thing that renders and grades every problem on their
+          site. Version 87 shipped this week — alive, not abandoned. For an exercise app,
+          that&rsquo;s about a year of work you don&rsquo;t do.</p>
+        </div>
+      </div>
+      <div>
+        <div class="state free">ALREADY<br>BUILT</div>
+        <div>
+          <h3>Live answer checking</h3>
+          <p>The checker already decides whether a kid&rsquo;s <code>1.5</code> means the same as
+          the key&rsquo;s <code>3/2</code>. On paper that&rsquo;s a build-time check on a fixed
+          key. <strong>In an app it&rsquo;s a student typing and being told.</strong> Same code,
+          different product.</p>
+        </div>
+      </div>
+      <div>
+        <div class="state free">ALREADY<br>PLANNED</div>
+        <div>
+          <h3>Infinite practice</h3>
+          <p>Step one makes twenty problems once, for a book. In an app the same machine makes a
+          <em>fresh</em> one every time a child gets one wrong. That is, precisely and entirely,
+          IXL&rsquo;s business model.</p>
+        </div>
+      </div>
+      <div>
+        <div class="state free">FREE<br>+ A MOAT</div>
+        <div>
+          <h3>Math a screen reader can read</h3>
+          <p>Worthless in a PDF. In an app it&rsquo;s real accessibility — and it&rsquo;s the gap
+          the market leader <strong>publicly admits to</strong>: Kuta&rsquo;s own accessibility
+          page says screen readers cannot describe their diagrams.</p>
+        </div>
+      </div>
+      <div>
+        <div class="state paid">FLIPS<br>PAID TIER</div>
+        <div>
+          <h3>Desmos &mdash; and this one is almost funny</h3>
+          <p>Closed because its terms forbid reproducing graphs <em>&ldquo;other than through the
+          Applications.&rdquo;</em> A book isn&rsquo;t an Application. <strong>An app is. That is
+          the exact case the licence was written for.</strong></p>
+          <p>Still needs a paid commercial tier, price unpublished — a negotiation, not a checkout
+          button. But it moved from <em>prohibited</em> to <em>available</em>.</p>
+        </div>
+      </div>
+      <div>
+        <div class="state shut">STILL<br>CLOSED</div>
+        <div>
+          <h3>GeoGebra</h3>
+          <p>Their rule isn&rsquo;t about format: <em>&ldquo;whether a use is non-commercial
+          depends on the use, not the user.&rdquo;</em> A commercial app is commercial use. Same
+          negotiated publisher contract, with an audit clause.</p>
+        </div>
+      </div>
+      <div>
+        <div class="state shut">STILL<br>CLOSED</div>
+        <div>
+          <h3>Formal proof software</h3>
+          <p>Not a paper-versus-screen thing — it isn&rsquo;t ready. The step that translates a
+          problem into the prover&rsquo;s language runs 10&ndash;66% accurate, and human experts
+          get it wrong 38% of the time. It would certify wrong answers with total confidence.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="callout" style="margin-top:28px">
+      <span class="lbl">The rule this produced</span>
+      <p>When something gets ruled out, <strong>say which frame it failed</strong> — paper,
+      licence, maturity, or fit. A verdict that was really about paper must never quietly harden
+      into a permanent no.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div>NCHO MATH LANE &middot; What&rsquo;s Next</div>
+    <div><a href="../index.html">&larr; Back to the hub</a></div>
+  </div>
+</footer>
+</body>
+</html>

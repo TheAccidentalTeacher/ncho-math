@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>The Machine &middot; NCHO Math Lane</title>
+<meta name="description" content="How a math worksheet gets made: what draws the figures, what computes the answers, and the gates that stop a bad page.">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=JetBrains+Mono:wght@400;700&display=swap">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="home" href="../index.html">NCHO Math Lane</a>
+    <nav class="site-nav">
+      <a href="../standards/index.html">The Board</a>
+      <a href="index.html" aria-current="page">The Machine</a>
+      <a href="../samples/index.html">Samples</a>
+      <a href="../findings/index.html">What We Learned</a>
+      <a href="../roadmap/index.html">What's Next</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <p class="crumb"><a href="../index.html">Home</a> / The Machine</p>
+  <span class="lbl">How it works</span>
+  <h1>Three jobs, and a bouncer</h1>
+  <p class="lede">Making a math worksheet is one hard problem wearing three coats: <strong>write the
+  math, draw the picture, prove the answer.</strong> Then something has to refuse to print the page
+  when one of them is wrong.</p>
+
+  <section>
+    <span class="lbl">Job one</span>
+    <h2>Writing the math</h2>
+    <p>Not &ldquo;type x squared.&rdquo; A proper stacked fraction. A square-root sign that
+    stretches over whatever&rsquo;s underneath it. An integral. On paper, at print quality, in a
+    file Amazon will accept.</p>
+    <p>We tested it by writing out 47 expressions, starting at a sixth-grade proportion and ending
+    at the equation describing how light and matter interact. <strong>All 47 render.</strong> The
+    only thing in that entire range the typesetter couldn&rsquo;t do was one symbol used in
+    particle physics, fixed with a single line.</p>
+    <div class="note">
+      <p>Every font ends up <strong>embedded in the finished PDF</strong> — which is the thing
+      print shops actually reject files for. That&rsquo;s checked on every build, not assumed.</p>
+    </div>
+  </section>
+
+  <section>
+    <span class="lbl">Job two</span>
+    <h2>Drawing a picture that isn&rsquo;t lying</h2>
+    <p>Ask an image generator for a 47&deg; angle and you get something near 60&deg;. Ask for a
+    number line and the tick marks get spaced by eye. Ask for a parabola and you get a smile.</p>
+    <p>A worksheet whose picture disagrees with its own answer key <strong>teaches a child
+    something false</strong> — and on a paid product, that&rsquo;s a refund and a one-star review.
+    So no image model goes anywhere near a math figure.</p>
+    <div class="callout">
+      <span class="lbl">The idea that makes it work</span>
+      <p>Figures are drawn <strong>from the same numbers that produce the answer</strong>. And then
+      the drawing <em>measures itself</em> — it hands back every side length and every angle it
+      actually drew, so the build can compare that against what the worksheet claims and stop
+      everything if they disagree.</p>
+      <p>The picture has to pass a pop quiz about itself.</p>
+    </div>
+    <p>What it can draw today: number lines (with inequality shading, open and closed circles),
+    coordinate planes with real function graphs, triangles and polygons with accurate labelled
+    sides and angles, circles with radii and chords, 3-D solids with dimension labels, and the
+    statistics set — bar, box, scatter, histogram, dot plot.</p>
+  </section>
+
+  <section>
+    <span class="lbl">Job three</span>
+    <h2>Proving the answer key</h2>
+    <p>A parent marks their child <em>wrong</em> from our key. If we&rsquo;re wrong, we
+    didn&rsquo;t embarrass ourselves — we told a kid they&rsquo;re bad at math when they
+    aren&rsquo;t.</p>
+    <p>So nobody writes the answers. A computer algebra system computes them, and hands back both
+    the answer and the way to print it, so <strong>the question on the page and the answer in the
+    back physically cannot drift apart.</strong></p>
+    <p>There&rsquo;s a second piece: deciding whether a child&rsquo;s answer <em>means</em> the same
+    as the key. <code>1.5</code>, <code>3/2</code> and <code>1&frac12;</code> are one answer wearing
+    three coats, and a key that only matches its own spelling marks a right kid wrong.</p>
+    <p>Three independent checks have to agree. <strong>If they disagree, it does not guess — it
+    stops and asks a human.</strong> That triage bucket is the whole quality mechanism, and it
+    costs nothing.</p>
+  </section>
+
+  <section>
+    <span class="lbl">The bouncer</span>
+    <h2>Ten gates. Any red one stops the build.</h2>
+    <p>Every one of these exists because it caught something real.</p>
+    <div class="readout">
+<span class="d">$ node build-proof.mjs</span>
+
+  <span class="g">PASS</span>  triangle side labels match the drawing
+  <span class="g">PASS</span>  the right angle really measures 90
+  <span class="g">PASS</span>  interior angles sum to 180
+  <span class="g">PASS</span>  Pythagorean answer equals the drawn hypotenuse
+  <span class="g">PASS</span>  plotted line has the slope the key claims
+  <span class="g">PASS</span>  cylinder volume key matches its printed labels
+  <span class="g">PASS</span>  cylinder figure is declared NOT TO SCALE
+  <span class="g">PASS</span>  box plot median is computed, not eyeballed
+  <span class="g">PASS</span>  every problem's math parses
+  <span class="g">PASS</span>  no page overflows its printable area
+
+<span class="d">GATE: 10/10 passed</span>
+    </div>
+    <p>Plus three that run inside the figure drawer: no two labels printed on top of each other, no
+    text cropped off the edge of a figure, and every font in the finished PDF real and embedded.</p>
+  </section>
+
+  <section>
+    <span class="lbl">The lesson that cost the most</span>
+    <h2>Green checks lied. Looking didn&rsquo;t.</h2>
+    <p>Every defect that would have reached a customer was found the same way: by rendering the
+    page and <strong>putting eyes on it</strong>. A missing right-angle mark. &ldquo;6 cm&rdquo;
+    printed on top of the line it labelled. Shading so faint the answer was invisible. Two pages
+    silently chopped off. Units deleted from a question — a cylinder labelled
+    <code>h = 9 cm</code> printing as <code>h = 9</code>, which makes it a different question than
+    the one the answer key answers.</p>
+    <p><strong>Every one of those shipped through a green build.</strong></p>
+    <div class="callout">
+      <span class="lbl">The rule</span>
+      <p>A gate is worth having because it catches a defect once and then catches it forever. But a
+      gate can only check what someone thought to check. <strong>The eye finds the thing nobody
+      thought of; the gate makes sure it never comes back.</strong> Both, in that order, or
+      you&rsquo;re shipping blind.</p>
+    </div>
+  </section>
+
+  <section>
+    <span class="lbl">Where it lives</span>
+    <h2>The parts</h2>
+    <div class="tblwrap">
+      <table class="files">
+        <thead><tr><th>File</th><th>What it does</th></tr></thead>
+        <tbody>
+          <tr><td>build-proof.mjs</td><td>End to end: draw the figures, compute the answers, run every gate, build the PDF.</td></tr>
+          <tr><td>lib/tex.mjs</td><td>Turns math notation into something printable. Bundles its own fonts, so a page works offline.</td></tr>
+          <tr><td>lib/draw.py</td><td>Draws every figure — and measures each one back.</td></tr>
+          <tr><td>lib/cas.py</td><td>Computes the answer key. Nobody types an answer.</td></tr>
+          <tr><td>lib/equiv.py</td><td>Decides whether a child&rsquo;s answer means the same as the key.</td></tr>
+          <tr><td>lib/overflow.mjs</td><td>Measures every page against the paper&rsquo;s real edge.</td></tr>
+          <tr><td>font-gate.py</td><td>Run before any book ships. Checks the fonts are real fonts.</td></tr>
+          <tr><td>inspect-pdf.py</td><td>Turns the finished PDF back into pictures so a human can look.</td></tr>
+          <tr><td>selftest.mjs</td><td>What the answer-matcher gets right — <em>and what it can&rsquo;t do.</em></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="plain">
+      <p class="mono" style="font-size:13px;margin:0">WEBSITES\Jumpdrive\NCHO\workbooks\math-lab\</p>
+      <p class="mono" style="font-size:13px;margin:6px 0 0;color:var(--pencil)">WEBSITES\Jumpdrive\NCHO\standards\ccssm\ &nbsp;&mdash; the 664-code table</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div>NCHO MATH LANE &middot; The Machine</div>
+    <div><a href="../index.html">&larr; Back to the hub</a></div>
+  </div>
+</footer>
+</body>
+</html>

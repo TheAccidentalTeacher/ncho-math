@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>What We Learned &middot; NCHO Math Lane</title>
+<meta name="description" content="Five research passes in plain words: the surprises, the legal landmines, and why nobody ships a clean math book.">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=JetBrains+Mono:wght@400;700&display=swap">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="home" href="../index.html">NCHO Math Lane</a>
+    <nav class="site-nav">
+      <a href="../standards/index.html">The Board</a>
+      <a href="../machine/index.html">The Machine</a>
+      <a href="../samples/index.html">Samples</a>
+      <a href="index.html" aria-current="page">What We Learned</a>
+      <a href="../roadmap/index.html">What's Next</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <p class="crumb"><a href="../index.html">Home</a> / What We Learned</p>
+  <span class="lbl">Five research passes, September 2026</span>
+  <h1>What we learned</h1>
+  <p class="lede">Everything below was checked against a real source, not assumed. The
+  uncomfortable parts are here too &mdash; including the places we were wrong.</p>
+
+  <section>
+    <span class="lbl">The benchmark nobody publishes</span>
+    <h2>Nobody ships a clean math book</h2>
+    <p>OpenStax runs a <em>public</em> error tracker. Eleven professionally produced math titles —
+    peer reviewed, edited, paid accuracy checkers, the whole apparatus.</p>
+    <div class="readout">
+<span class="d">OPENSTAX MATHEMATICS — every error report ever filed, as of 2026-09-04</span>
+
+  reports submitted . . . . . . . . <span class="r">4,996</span>
+  confirmed real errors . . . . . . <span class="r">3,343</span>
+  confirmed <span class="r">WRONG ANSWERS</span> . . . . . . <span class="r">1,187</span>
+
+  <span class="d">Calculus Volume 3 alone: 1,053 confirmed errors, 341 wrong answers</span>
+  <span class="d">Developmental math books: wrong answers are ~50% of every defect</span>
+  <span class="d">Median time to fix: 140 days</span>
+    </div>
+    <p>That&rsquo;s what &ldquo;professionally checked&rdquo; actually delivers. And it&rsquo;s
+    <em>freeing</em>, not frightening: the question was never whether we can ship zero errors —
+    nobody can. The question is <strong>whether there&rsquo;s a way to fix one when it&rsquo;s
+    found.</strong> That&rsquo;s a much smaller thing to build.</p>
+    <div class="note">
+      <p><strong>A true sentence for a product listing:</strong> our answer key is computed by a
+      computer algebra system and cross-checked by a second independent method. That is already
+      better than what the textbook industry does.</p>
+    </div>
+  </section>
+
+  <section>
+    <span class="lbl">A thing everyone believes</span>
+    <h2>&ldquo;Two independent solvers&rdquo; is folklore</h2>
+    <p>Ask anyone how textbook answer keys get verified and you&rsquo;ll hear that two different
+    people solve everything independently. <strong>There is no source for that anywhere.</strong>
+    The phrases aren&rsquo;t even industry vocabulary.</p>
+    <p>The one book preface that actually spells out who did what credits <strong>the same
+    person</strong> for preparing the answer key and serving as accuracy checker. One person,
+    working forward, twice. The pattern repeats across at least five publishers.</p>
+    <p>The one scope-of-work document we found priced accuracy-checking an entire book at
+    <strong>$250&ndash;750</strong>. That&rsquo;s the industry&rsquo;s real spend.</p>
+    <p>And the reason the role exists at all isn&rsquo;t craft pride — it&rsquo;s that Texas law
+    makes publishers <em>swear an affidavit</em> that their materials are free of factual error,
+    with penalties attached.</p>
+  </section>
+
+  <section>
+    <span class="lbl">Legal, not technical</span>
+    <h2>Two graphing tools we cannot touch</h2>
+    <div class="grid2">
+      <div class="panel warn">
+        <h3>Desmos</h3>
+        <p>The obvious tool. Its terms forbid reproducing its graphs <em>&ldquo;other than through
+        the Applications&rdquo;</em> — <strong>and a printed book isn&rsquo;t an
+        Application.</strong> Free tier is non-commercial only, and their branding can&rsquo;t be
+        removed either.</p>
+        <p><strong>Reopens for apps</strong>, where an app <em>is</em> an Application — with a paid
+        commercial tier attached.</p>
+      </div>
+      <div class="panel warn">
+        <h3>GeoGebra</h3>
+        <p>Technically the best of them. Its licence names our exact use <em>twice</em>, in
+        language updated November 2025: &ldquo;educational materials or resources which will be
+        sold in exchange for a fee,&rdquo; and &ldquo;within a non-academic ebook.&rdquo;</p>
+        <p><strong>Stays closed even for apps</strong> — their bar is commercial <em>use</em>, not
+        format.</p>
+      </div>
+      <div class="panel warn">
+        <h3>Texas standards: the code, never the text</h3>
+        <p>Texas forbids charging for &ldquo;any document containing&rdquo; their standards text
+        unless you&rsquo;re a Texas district or resident. <strong>Alaska fits no exemption.</strong></p>
+        <p>But a code like <code>7.3(A)</code> is a legal citation — a fact, and facts
+        aren&rsquo;t ownable. So: codes yes, text never. Costs nothing to obey.</p>
+      </div>
+      <div class="panel">
+        <h3>Common Core: free, with an exact line</h3>
+        <p>No fee, no permission. But any product printing the standard&rsquo;s text carries this,
+        word for word:</p>
+        <p style="font-size:14.5px"><code style="white-space:normal;display:block;padding:9px 11px;line-height:1.5">&copy; Copyright 2010. National Governors Association Center for Best Practices and Council of Chief State School Officers. All rights reserved.</code></p>
+        <p>The &ldquo;For example&hellip;&rdquo; bits inside standards were licensed from third
+        parties and aren&rsquo;t covered.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <span class="lbl">Time-sensitive</span>
+    <h2>The free textbooks are disappearing</h2>
+    <p>OpenStax math books you can legally build a <em>sold</em> product from are the
+    <strong>first</strong> editions. They&rsquo;re being replaced by second editions licensed
+    non-commercial — useless to us. Two already return &ldquo;page not found.&rdquo; Only 10 of
+    their 24 math titles were ever open enough.</p>
+    <p>The one to actually build from: <strong>Illustrative Mathematics 6&ndash;12</strong> through
+    Kendall Hunt. Licensed CC BY 4.0, covers middle <em>and</em> high school, and they explicitly
+    permit selling what you derive from it.</p>
+    <p>Avoid: the WeBWorK problem library (non-commercial, and it contains folders named after
+    publishers whose rights they couldn&rsquo;t have licensed), CK-12 (no longer open), EngageNY
+    (non-commercial), and Kuta (their licence claims the output).</p>
+    <div class="callout">
+      <p><strong>Watch ShareAlike, not just NonCommercial.</strong> A CC BY-SA licence reads like a
+      green light and would force a $9.99 book to be redistributable free.</p>
+    </div>
+  </section>
+
+  <section>
+    <span class="lbl">Not about math at all</span>
+    <h2>Your landlord owns your competition</h2>
+    <p><strong>IXL Learning owns Teachers Pay Teachers.</strong> They also own Carson Dellosa and
+    Evan-Moor — two of the largest print-workbook publishers in the country — plus Rosetta Stone,
+    Education.com, ABCya and Wyzant.</p>
+    <p>So the storefront we sell on is owned by the company that owns the shelf we compete with.</p>
+    <div class="note">
+      <p><strong>And here&rsquo;s the good part.</strong> Across all 111 of their open jobs
+      they&rsquo;re hiring <em>freelance worksheet designers</em> who need &ldquo;expert-level
+      InDesign and Illustrator.&rdquo; There is not one mention of any automated figure generation,
+      anywhere. <strong>Their math figures are drawn by hand, by people, one at a time.</strong>
+      That&rsquo;s a labour cost, not a technology moat.</p>
+    </div>
+  </section>
+
+  <section>
+    <span class="lbl">The risk runs backwards</span>
+    <h2>Amazon enforces. TPT doesn&rsquo;t.</h2>
+    <div class="grid2">
+      <div class="panel">
+        <h3>Amazon KDP</h3>
+        <p>Three severity tiers, customer error reporting, a dashboard that emails you monthly
+        until you fix it, a <strong>quality warning banner on your public product page</strong>,
+        and — their words — &ldquo;books with wrong content are always removed from sale.&rdquo;</p>
+      </div>
+      <div class="panel">
+        <h3>Teachers Pay Teachers</h3>
+        <p>Terms disclaim all warranty on accuracy. Sellers warrant their age, billing, tax and IP
+        — <strong>nothing about correctness</strong>. The refund policy has exactly five grounds
+        and &ldquo;the answer key is wrong&rdquo; isn&rsquo;t one of them.</p>
+      </div>
+    </div>
+    <p>Which makes TPT sound safer. It isn&rsquo;t. On Amazon the platform makes you fix it. On TPT
+    <strong>the buyer is a teacher who finds your mistake in front of thirty children</strong> and
+    writes it in a public rating. Zero platform risk; the highest reputation risk anywhere.</p>
+  </section>
+
+  <section>
+    <span class="lbl">The one to design around</span>
+    <h2>Don&rsquo;t let the AI grade its own homework</h2>
+    <p>If a model writes the lesson text, something reads the answer back out of that text, and the
+    checker verifies it against assumptions <em>also</em> pulled from that same text — every check
+    goes green while proving only that the model agreed with itself.</p>
+    <p>The green report makes the error look impossible. That&rsquo;s worse than no checking.</p>
+    <div class="callout">
+      <span class="lbl">The fix is architecture, not a better checker</span>
+      <p>The numbers are decided <strong>first, mechanically</strong>. The model never writes a
+      number. Its prose is treated as untrusted forever. Verification computes by a
+      <strong>second independent route</strong> — build the problem backwards from the answer, or
+      substitute the answer back in and check it lands.</p>
+    </div>
+  </section>
+
+  <section>
+    <span class="lbl">Checked, and it didn&rsquo;t bite</span>
+    <h2>The font scare</h2>
+    <p>Research flagged that Chrome quietly converts certain fonts into a format that&rsquo;s
+    really just a pile of drawings with no letters behind it. Printers reject those, and every
+    normal tool reports them as fine.</p>
+    <p>So we checked <strong>every product currently for sale</strong>: Wren &amp; Sitka&rsquo;s
+    interior and cover, all four Constitution Day files, all ten study guides.
+    <strong>Every one clean.</strong> There&rsquo;s a permanent check now so it stays that way.</p>
+  </section>
+
+  <section>
+    <span class="lbl">Where we were wrong</span>
+    <h2>Three corrections</h2>
+    <ul class="plain">
+      <li><strong>&ldquo;The typesetter doesn&rsquo;t emit vector drawings.&rdquo;</strong> It does
+      — every square root, short ones included. Still fine for our purposes, but the claim was
+      wrong and got measured and corrected.</li>
+      <li><strong>&ldquo;The standards table has to be built by hand.&rdquo;</strong> It
+      didn&rsquo;t. There&rsquo;s a real machine-readable release, and the 664-code table now sits
+      in the repo because of it.</li>
+      <li><strong>&ldquo;These tools are ruled out.&rdquo;</strong> Several were ruled out for
+      <em>paper</em>, and that got written down as if it were permanent. Half of them reopen the
+      day we build an app. <a href="../roadmap/index.html#apps">The split is here.</a></li>
+    </ul>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div>NCHO MATH LANE &middot; What We Learned</div>
+    <div><a href="../index.html">&larr; Back to the hub</a></div>
+  </div>
+</footer>
+</body>
+</html>
