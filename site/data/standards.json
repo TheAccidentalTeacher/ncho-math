@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-04",
+ "generated": "2026-09-05",
  "source": "https://asn.desire2learn.com/resources/D10003FB_full.json",
  "frozen": "2026-09-04",
  "notice": "© Copyright 2010. National Governors Association Center for Best Practices and Council of Chief State School Officers. All rights reserved.",
@@ -12,9 +12,9 @@
  },
  "counts": {
   "total": 53,
-  "done": 0,
+  "done": 29,
   "wip": 0,
-  "todo": 53
+  "todo": 24
  },
  "rows": [
   {
@@ -26,7 +26,7 @@
    "num": 1,
    "text": "Write and evaluate numerical expressions involving whole-number exponents.",
    "parts": [],
-   "status": "todo",
+   "status": "done",
    "note": ""
   },
   {
@@ -51,7 +51,7 @@
      "text": "Evaluate expressions at specific values of their variables. Include expressions that arise from formulas used in real-world problems. Perform arithmetic operations, including those involving whole-number exponents, in the conventional order when there are no parentheses to specify a particular order (Order of Operations)."
     }
    ],
-   "status": "todo",
+   "status": "done",
    "note": ""
   },
   {
@@ -63,7 +63,7 @@
    "num": 3,
    "text": "Apply the properties of operations to generate equivalent expressions.",
    "parts": [],
-   "status": "todo",
+   "status": "done",
    "note": ""
   },
   {
@@ -75,7 +75,7 @@
    "num": 4,
    "text": "Identify when two expressions are equivalent (i.e., when the two expressions name the same number regardless of which value is substituted into them).",
    "parts": [],
-   "status": "todo",
+   "status": "done",
    "note": ""
   },
   {
@@ -87,7 +87,7 @@
    "num": 5,
    "text": "Understand solving an equation or inequality as a process of answering a question: which values from a specified set, if any, make the equation or inequality true? Use substitution to determine whether a given number in a specified set makes an equation or inequality true.",
    "parts": [],
-   "status": "todo",
+   "status": "done",
    "note": ""
   },
   {
@@ -99,7 +99,7 @@
    "num": 6,
    "text": "Use variables to represent numbers and write expressions when solving a real-world or mathematical problem; understand that a variable can represent an unknown number, or, depending on the purpose at hand, any number in a specified set.",
    "parts": [],
-   "status": "todo",
+   "status": "done",
    "note": ""
   },
   {
@@ -111,7 +111,7 @@
    "num": 7,
    "text": "Solve real-world and mathematical problems by writing and solving equations of the form x + p = q and px = q for cases in which p, q and x are all nonnegative rational numbers.",
    "parts": [],
-   "status": "todo",
+   "status": "done",
    "note": ""
   },
   {
@@ -123,7 +123,7 @@
    "num": 8,
    "text": "Write an inequality of the form x > c or x < c to represent a constraint or condition in a real-world or mathematical problem. Recognize that inequalities of the form x > c or x < c have infinitely many solutions; represent solutions of such inequalities on number line diagrams.",
    "parts": [],
-   "status": "todo",
+   "status": "done",
    "note": ""
   },
   {
@@ -135,7 +135,7 @@
    "num": 9,
    "text": "Use variables to represent two quantities in a real-world problem that change in relationship to one another; write an equation to express one quantity, thought of as the dependent variable, in terms of the other quantity, thought of as the independent variable. Analyze the relationship between the dependent and independent variables using graphs and tables, and relate these to the equation.",
    "parts": [],
-   "status": "todo",
+   "status": "done",
    "note": ""
   },
   {
@@ -147,7 +147,7 @@
    "num": 1,
    "text": "Find the area of right triangles, other triangles, special quadrilaterals, and polygons by composing into rectangles or decomposing into triangles and other shapes; apply these techniques in the context of solving real-world and mathematical problems.",
    "parts": [],
-   "status": "todo",
+   "status": "done",
    "note": ""
   },
   {
@@ -159,7 +159,7 @@
    "num": 2,
    "text": "Find the volume of a right rectangular prism with fractional edge lengths by packing it with unit cubes of the appropriate unit fraction edge lengths, and show that the volume is the same as would be found by multiplying the edge lengths of the prism. Apply the formulas V = l w h and V = b h to find volumes of right rectangular prisms with fractional edge lengths in the context of solving real-world and mathematical problems.",
    "parts": [],
-   "status": "todo",
+   "status": "done",
    "note": ""
   },
   {
@@ -171,7 +171,7 @@
    "num": 3,
    "text": "Draw polygons in the coordinate plane given coordinates for the vertices; use coordinates to find the length of a side joining points with the same first coordinate or the same second coordinate. Apply these techniques in the context of solving real-world and mathematical problems.",
    "parts": [],
-   "status": "todo",
+   "status": "done",
    "note": ""
   },
   {
@@ -183,7 +183,7 @@
    "num": 4,
    "text": "Represent three-dimensional figures using nets made up of rectangles and triangles, and use the nets to find the surface area of these figures. Apply these techniques in the context of solving real-world and mathematical problems.",
    "parts": [],
-   "status": "todo",
+   "status": "done",
    "note": ""
   },
   {
@@ -195,7 +195,7 @@
    "num": 1,
    "text": "Interpret and compute quotients of fractions, and solve word problems involving division of fractions by fractions, e.g., by using visual fraction models and equations to represent the problem.",
    "parts": [],
-   "status": "todo",
+   "status": "done",
    "note": ""
   },
   {
@@ -207,7 +207,7 @@
    "num": 2,
    "text": "Fluently divide multi-digit numbers using the standard algorithm.",
    "parts": [],
-   "status": "todo",
+   "status": "done",
    "note": ""
   },
   {
@@ -219,7 +219,7 @@
    "num": 3,
    "text": "Fluently add, subtract, multiply, and divide multi-digit decimals using the standard algorithm for each operation.",
    "parts": [],
-   "status": "todo",
+   "status": "done",
    "note": ""
   },
   {
@@ -231,7 +231,7 @@
    "num": 4,
    "text": "Find the greatest common factor of two whole numbers less than or equal to 100 and the least common multiple of two whole numbers less than or equal to 12. Use the distributive property to express a sum of two whole numbers 1—100 with a common factor as a multiple of a sum of two whole numbers with no common factor.",
    "parts": [],
-   "status": "todo",
+   "status": "done",
    "note": ""
   },
   {
@@ -243,7 +243,7 @@
    "num": 5,
    "text": "Understand that positive and negative numbers are used together to describe quantities having opposite directions or values (e.g., temperature above/below zero, elevation above/below sea level, credits/debits, positive/negative electric charge); use positive and negative numbers to represent quantities in real-world contexts, explaining the meaning of 0 in each situation.",
    "parts": [],
-   "status": "todo",
+   "status": "done",
    "note": ""
   },
   {
@@ -268,7 +268,7 @@
      "text": "Find and position integers and other rational numbers on a horizontal or vertical number line diagram; find and position pairs of integers and other rational numbers on a coordinate plane."
     }
    ],
-   "status": "todo",
+   "status": "done",
    "note": ""
   },
   {
@@ -297,7 +297,7 @@
      "text": "Distinguish comparisons of absolute value from statements about order."
     }
    ],
-   "status": "todo",
+   "status": "done",
    "note": ""
   },
   {
@@ -309,7 +309,7 @@
    "num": 8,
    "text": "Solve real-world and mathematical problems by graphing points in all four quadrants of the coordinate plane. Include use of coordinates and absolute value to find distances between points with the same first coordinate or the same second coordinate.",
    "parts": [],
-   "status": "todo",
+   "status": "done",
    "note": ""
   },
   {
@@ -321,7 +321,7 @@
    "num": 1,
    "text": "Understand the concept of a ratio and use ratio language to describe a ratio relationship between two quantities.",
    "parts": [],
-   "status": "todo",
+   "status": "done",
    "note": ""
   },
   {
@@ -333,7 +333,7 @@
    "num": 2,
    "text": "Understand the concept of a unit rate a/b associated with a ratio a:b with b ≠ 0, and use rate language in the context of a ratio relationship.",
    "parts": [],
-   "status": "todo",
+   "status": "done",
    "note": ""
   },
   {
@@ -362,7 +362,7 @@
      "text": "Use ratio reasoning to convert measurement units; manipulate and transform units appropriately when multiplying or dividing quantities."
     }
    ],
-   "status": "todo",
+   "status": "done",
    "note": ""
   },
   {
@@ -374,7 +374,7 @@
    "num": 1,
    "text": "Recognize a statistical question as one that anticipates variability in the data related to the question and accounts for it in the answers.",
    "parts": [],
-   "status": "todo",
+   "status": "done",
    "note": ""
   },
   {
@@ -386,7 +386,7 @@
    "num": 2,
    "text": "Understand that a set of data collected to answer a statistical question has a distribution which can be described by its center, spread, and overall shape.",
    "parts": [],
-   "status": "todo",
+   "status": "done",
    "note": ""
   },
   {
@@ -398,7 +398,7 @@
    "num": 3,
    "text": "Recognize that a measure of center for a numerical data set summarizes all of its values with a single number, while a measure of variation describes how its values vary with a single number.",
    "parts": [],
-   "status": "todo",
+   "status": "done",
    "note": ""
   },
   {
@@ -410,7 +410,7 @@
    "num": 4,
    "text": "Display numerical data in plots on a number line, including dot plots, histograms, and box plots.",
    "parts": [],
-   "status": "todo",
+   "status": "done",
    "note": ""
   },
   {
@@ -439,7 +439,7 @@
      "text": "Relating the choice of measures of center and variability to the shape of the data distribution and the context in which the data were gathered."
     }
    ],
-   "status": "todo",
+   "status": "done",
    "note": ""
   },
   {

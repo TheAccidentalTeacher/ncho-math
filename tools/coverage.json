@@ -1,4 +1,281 @@
 {
-  "_comment": "Coverage of the 6th/7th grade proof of concept. Keyed by CCSS-M code. status: done | wip | todo. Anything absent is todo. Hand-maintained; the codes themselves are never typed here without existing in the frozen table.",
-  "_updated": "2026-09-04"
+  "_comment": "Coverage of the 6th/7th grade proof of concept. Keyed by CCSS-M code, spelled exactly as the frozen 664-code table spells it. status: done | wip | todo. Anything absent is todo. Generated from the shipped spine, never hand-typed.",
+  "_updated": "2026-09-04",
+  "_source": "Jumpdrive/NCHO/workbooks/commissions/grade-6-math — 33 lessons, gated, rendered",
+  "6.NS.B.2": {
+    "status": "done",
+    "lesson": 1,
+    "title": "Long Division, the Whole Way Through",
+    "book": "Sixth Grade Math in the Copper River Valley"
+  },
+  "6.NS.B.3": {
+    "status": "done",
+    "lesson": 2,
+    "title": "Decimals: Add, Subtract, Multiply, Divide",
+    "book": "Sixth Grade Math in the Copper River Valley"
+  },
+  "6.NS.B.4": {
+    "status": "done",
+    "lesson": 3,
+    "title": "Greatest Common Factor, Least Common Multiple",
+    "book": "Sixth Grade Math in the Copper River Valley"
+  },
+  "6.RP.A.1": {
+    "status": "done",
+    "lesson": 4,
+    "title": "What a Ratio Says",
+    "book": "Sixth Grade Math in the Copper River Valley"
+  },
+  "6.RP.A.2": {
+    "status": "done",
+    "lesson": 5,
+    "title": "The Unit Rate: How Much for One",
+    "book": "Sixth Grade Math in the Copper River Valley"
+  },
+  "6.RP.A.3": {
+    "status": "done",
+    "lesson": 6,
+    "title": "Ratio Tables and Double Number Lines",
+    "book": "Sixth Grade Math in the Copper River Valley"
+  },
+  "6.RP.A.3a": {
+    "status": "done",
+    "lesson": 6,
+    "title": "Ratio Tables and Double Number Lines",
+    "book": "Sixth Grade Math in the Copper River Valley"
+  },
+  "6.RP.A.3b": {
+    "status": "done",
+    "lesson": 6,
+    "title": "Ratio Tables and Double Number Lines",
+    "book": "Sixth Grade Math in the Copper River Valley"
+  },
+  "6.RP.A.3c": {
+    "status": "done",
+    "lesson": 7,
+    "title": "Percent: A Rate per Hundred",
+    "book": "Sixth Grade Math in the Copper River Valley"
+  },
+  "6.RP.A.3d": {
+    "status": "done",
+    "lesson": 8,
+    "title": "Converting Units with Ratio Reasoning",
+    "book": "Sixth Grade Math in the Copper River Valley"
+  },
+  "6.NS.A.1": {
+    "status": "done",
+    "lesson": 9,
+    "title": "Dividing a Fraction by a Fraction",
+    "book": "Sixth Grade Math in the Copper River Valley"
+  },
+  "6.NS.C.5": {
+    "status": "done",
+    "lesson": 10,
+    "title": "Below Zero: Positive and Negative Numbers",
+    "book": "Sixth Grade Math in the Copper River Valley"
+  },
+  "6.NS.C.6": {
+    "status": "done",
+    "lesson": 11,
+    "title": "Every Number Has a Place on the Line",
+    "book": "Sixth Grade Math in the Copper River Valley"
+  },
+  "6.NS.C.6a": {
+    "status": "done",
+    "lesson": 11,
+    "title": "Every Number Has a Place on the Line",
+    "book": "Sixth Grade Math in the Copper River Valley"
+  },
+  "6.NS.C.6c": {
+    "status": "done",
+    "lesson": 11,
+    "title": "Every Number Has a Place on the Line",
+    "book": "Sixth Grade Math in the Copper River Valley"
+  },
+  "6.NS.C.6b": {
+    "status": "done",
+    "lesson": 12,
+    "title": "Four Quadrants",
+    "book": "Sixth Grade Math in the Copper River Valley"
+  },
+  "6.NS.C.7": {
+    "status": "done",
+    "lesson": 13,
+    "title": "Which Is Colder? Ordering Rational Numbers",
+    "book": "Sixth Grade Math in the Copper River Valley"
+  },
+  "6.NS.C.7a": {
+    "status": "done",
+    "lesson": 13,
+    "title": "Which Is Colder? Ordering Rational Numbers",
+    "book": "Sixth Grade Math in the Copper River Valley"
+  },
+  "6.NS.C.7b": {
+    "status": "done",
+    "lesson": 13,
+    "title": "Which Is Colder? Ordering Rational Numbers",
+    "book": "Sixth Grade Math in the Copper River Valley"
+  },
+  "6.NS.C.7c": {
+    "status": "done",
+    "lesson": 14,
+    "title": "Absolute Value: How Far from Zero",
+    "book": "Sixth Grade Math in the Copper River Valley"
+  },
+  "6.NS.C.8": {
+    "status": "done",
+    "lesson": 15,
+    "title": "Points, Distances, and a Map Grid",
+    "book": "Sixth Grade Math in the Copper River Valley"
+  },
+  "6.EE.A.1": {
+    "status": "done",
+    "lesson": 16,
+    "title": "Exponents: Repeated Multiplication",
+    "book": "Sixth Grade Math in the Copper River Valley"
+  },
+  "6.EE.A.2": {
+    "status": "done",
+    "lesson": 17,
+    "title": "When a Letter Stands for a Number",
+    "book": "Sixth Grade Math in the Copper River Valley"
+  },
+  "6.EE.A.2a": {
+    "status": "done",
+    "lesson": 17,
+    "title": "When a Letter Stands for a Number",
+    "book": "Sixth Grade Math in the Copper River Valley"
+  },
+  "6.EE.A.2b": {
+    "status": "done",
+    "lesson": 17,
+    "title": "When a Letter Stands for a Number",
+    "book": "Sixth Grade Math in the Copper River Valley"
+  },
+  "6.EE.A.2c": {
+    "status": "done",
+    "lesson": 17,
+    "title": "When a Letter Stands for a Number",
+    "book": "Sixth Grade Math in the Copper River Valley"
+  },
+  "6.EE.A.3": {
+    "status": "done",
+    "lesson": 18,
+    "title": "Rewriting an Expression Without Changing It",
+    "book": "Sixth Grade Math in the Copper River Valley"
+  },
+  "6.EE.A.4": {
+    "status": "done",
+    "lesson": 19,
+    "title": "Are These Two Expressions the Same?",
+    "book": "Sixth Grade Math in the Copper River Valley"
+  },
+  "6.EE.B.5": {
+    "status": "done",
+    "lesson": 20,
+    "title": "What It Means to Solve",
+    "book": "Sixth Grade Math in the Copper River Valley"
+  },
+  "6.EE.B.6": {
+    "status": "done",
+    "lesson": 21,
+    "title": "A Letter for the Thing You Do Not Know",
+    "book": "Sixth Grade Math in the Copper River Valley"
+  },
+  "6.EE.B.7": {
+    "status": "done",
+    "lesson": 22,
+    "title": "Solving One-Step Equations",
+    "book": "Sixth Grade Math in the Copper River Valley"
+  },
+  "6.EE.B.8": {
+    "status": "done",
+    "lesson": 23,
+    "title": "At Least, At Most: Inequalities",
+    "book": "Sixth Grade Math in the Copper River Valley"
+  },
+  "6.EE.C.9": {
+    "status": "done",
+    "lesson": 24,
+    "title": "Two Quantities That Change Together",
+    "book": "Sixth Grade Math in the Copper River Valley"
+  },
+  "6.G.A.1": {
+    "status": "done",
+    "lesson": 25,
+    "title": "Area by Cutting and Rearranging",
+    "book": "Sixth Grade Math in the Copper River Valley"
+  },
+  "6.G.A.2": {
+    "status": "done",
+    "lesson": 26,
+    "title": "Volume When the Edges Are Fractions",
+    "book": "Sixth Grade Math in the Copper River Valley"
+  },
+  "6.G.A.3": {
+    "status": "done",
+    "lesson": 27,
+    "title": "Drawing a Polygon on a Grid",
+    "book": "Sixth Grade Math in the Copper River Valley"
+  },
+  "6.G.A.4": {
+    "status": "done",
+    "lesson": 28,
+    "title": "Unfold It: Nets and Surface Area",
+    "book": "Sixth Grade Math in the Copper River Valley"
+  },
+  "6.SP.A.1": {
+    "status": "done",
+    "lesson": 29,
+    "title": "A Question That Expects Different Answers",
+    "book": "Sixth Grade Math in the Copper River Valley"
+  },
+  "6.SP.A.2": {
+    "status": "done",
+    "lesson": 30,
+    "title": "Center, Spread, and Shape",
+    "book": "Sixth Grade Math in the Copper River Valley"
+  },
+  "6.SP.A.3": {
+    "status": "done",
+    "lesson": 31,
+    "title": "One Number for the Middle",
+    "book": "Sixth Grade Math in the Copper River Valley"
+  },
+  "6.SP.B.4": {
+    "status": "done",
+    "lesson": 32,
+    "title": "Three Pictures of the Same Data",
+    "book": "Sixth Grade Math in the Copper River Valley"
+  },
+  "6.SP.B.5": {
+    "status": "done",
+    "lesson": 33,
+    "title": "Summarizing a Data Set, Start to Finish",
+    "book": "Sixth Grade Math in the Copper River Valley"
+  },
+  "6.SP.B.5a": {
+    "status": "done",
+    "lesson": 33,
+    "title": "Summarizing a Data Set, Start to Finish",
+    "book": "Sixth Grade Math in the Copper River Valley"
+  },
+  "6.SP.B.5b": {
+    "status": "done",
+    "lesson": 33,
+    "title": "Summarizing a Data Set, Start to Finish",
+    "book": "Sixth Grade Math in the Copper River Valley"
+  },
+  "6.SP.B.5c": {
+    "status": "done",
+    "lesson": 33,
+    "title": "Summarizing a Data Set, Start to Finish",
+    "book": "Sixth Grade Math in the Copper River Valley"
+  },
+  "6.SP.B.5d": {
+    "status": "done",
+    "lesson": 33,
+    "title": "Summarizing a Data Set, Start to Finish",
+    "book": "Sixth Grade Math in the Copper River Valley"
+  }
 }
